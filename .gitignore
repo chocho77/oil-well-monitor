@@ -1,0 +1,41 @@
+### Spring Boot ###
+well-monitor/target/
+well-monitor/!.mvn/wrapper/maven-wrapper.jar
+well-monitor/HELP.md
+well-monitor/spring-boot-tools.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+well-monitor/.idea/
+well-monitor/*.iml
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+well-monitor/.vscode/
+
+### Compiled files ###
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
