@@ -1,0 +1,95 @@
+.scada-container {
+  background-color: #0a1a2f;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.alarm-section {
+  height: 120px;
+  border-bottom: 2px solid #00ff00;
+  margin-bottom: 5px;
+  overflow-y: auto;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  gap: 5px;
+  height: calc(100vh - 130px);
+}
+
+.left-nav {
+  width: 120px;
+  border-right: 2px solid #00ff00;
+  padding: 5px;
+}
+
+.wells-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 5px;
+  overflow-y: auto;
+}
+
+.section-title {
+  color: #00ff00;
+  font-size: 16px;
+  margin: 5px 0;
+  text-align: center;
+  border-bottom: 1px solid #00ff00;
+  padding-bottom: 5px;
+}
+
+.right-panel {
+  width: 150px;
+  border-left: 2px solid #00ff00;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-box {
+  border: 1px solid #00ff00;
+  padding: 5px;
+  background-color: #0f2a40;
+}
+
+.info-box h3 {
+  color: #ffff00;
+  font-size: 12px;
+  margin: 0 0 5px 0;
+  border-bottom: 1px dotted #00ff00;
+}
+
+.info-box p {
+  margin: 2px 0;
+  font-size: 11px;
+}
+
+.value {
+  color: #00ffff;
+  font-weight: bold;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f2a40;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ff00;
+  border-radius: 4px;
+}

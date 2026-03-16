@@ -1,0 +1,49 @@
+<div class="well-card" *ngIf="well as w">
+  <h2 class="well-title">{{ w.name }} SUBSEA</h2>
+  
+  <div class="sensors-grid">
+    <!-- PT3101 -->
+    <div class="sensor">
+      <span class="sensor-tag">PT3101</span>
+      <span class="sensor-value">{{ formatNumber(w.pt3101) }} PSIG</span>
+    </div>
+    
+    <!-- SDV3001 -->
+    <div class="sensor valve">
+      <span class="sensor-tag">SDV3001</span>
+      <span class="sensor-value">{{ w.sdv3001 }}</span>
+    </div>
+    
+    <!-- FROM CHEM INJ PUMPS -->
+    <div class="sensor chem">
+      <span class="sensor-tag">CHEM</span>
+      <span class="sensor-value">INJ PUMPS</span>
+    </div>
+    
+    <!-- ZT1100 -->
+    <div class="sensor">
+      <span class="sensor-tag">ZT1100</span>
+      <span class="sensor-value">{{ formatNumber(w.zt1100) }}%</span>
+    </div>
+  </div>
+  
+  <!-- Flow Information -->
+  <div class="flow-info">
+    <div class="flow-row">
+      <span class="flow-label">CURRENT DAY TOTALISED FLOW</span>
+      <span class="flow-value">{{ formatFlow(w.currentDayTotalisedFlow) }} RM3</span>
+    </div>
+    <div class="flow-row">
+      <span class="flow-label">PREVIOUS DAY TOTALISED FLOW</span>
+      <span class="flow-value">{{ formatFlow(w.previousDayTotalisedFlow) }} RM3</span>
+    </div>
+  </div>
+  
+  <!-- Additional Sensors (compact) -->
+  <div class="compact-sensors">
+    <span class="compact-tag">PT1205: {{ formatNumber(w.pt1205) }} Bar(G)</span>
+    <span class="compact-tag">PT1401: {{ formatNumber(w.pt1401) }} PSIG</span>
+    <span class="compact-tag">TT1100: {{ formatNumber(w.tt1100) }} DegC</span>
+    <span class="compact-tag">DP001: {{ formatNumber(w.dp001) }} Bar</span>
+  </div>
+</div>

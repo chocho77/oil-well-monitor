@@ -1,0 +1,27 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-btn {
+  background-color: #0f2a40;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  padding: 8px 5px;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: #1a3a50;
+}
+
+.nav-btn.active {
+  background-color: #00ff00;
+  color: #0a1a2f;
+  font-weight: bold;
+}
